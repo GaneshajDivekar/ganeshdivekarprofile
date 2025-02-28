@@ -89,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
           <div className="lg:w-1/2 flex justify-center">
             <div className={`relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 ${darkMode ? 'border-blue-600 shadow-lg shadow-blue-500/20' : 'border-blue-500 shadow-lg'}`}>
               <img 
-                src="https://imgur.com/a/G5irnxJ" 
+                src="https://iili.io/32JCHva.jpg" 
                 alt="Ganesh Divekar" 
                 className="w-full h-full object-cover"
               />
