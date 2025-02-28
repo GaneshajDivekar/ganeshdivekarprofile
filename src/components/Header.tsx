@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <a href="#" className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Ganesh<span className="text-blue-600">Divekar</span>
+              Ganesh<span className="text-blue-600"> Divekar</span>
             </a>
           </div>
 

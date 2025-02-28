@@ -20,16 +20,16 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-6">
-              Platform Architecture Engineering Professional
+              Tech-Driven Platform Architecture Engineering Professional
             </h3>
             <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              I am a seasoned engineering professional with extensive experience in platform architecture and engineering management. Currently serving as Manager of Platform Architecture Engineering at Bajaj Finserv, I lead teams in designing and implementing robust, scalable systems that power financial technology solutions.
+              I am a technology-driven engineering professional with extensive experience in platform architecture and engineering management. Currently serving as Manager of Platform Architecture Engineering at Bajaj Finserv, I lead teams in designing and implementing robust, scalable systems that power financial technology solutions.
             </p>
             <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              My technical expertise spans multiple domains including backend development with Java, Kotlin, Go, and Python; frontend development with React, Angular, and Next.js; mobile development across Android, iOS, and Flutter; and cloud infrastructure on AWS, Azure, and GCP.
+              My technical expertise spans backend development with Java, Kotlin, Go, and Python; frontend development with React, Angular, and Next.js; mobile development across Android, iOS, and Flutter; and cloud infrastructure on AWS, Azure, and GCP. I specialize in DevOps automation with Kubernetes, Terraform, and CI/CD pipelines, ensuring efficient deployment and scalability of cloud-native applications.
             </p>
-            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              I'm passionate about leveraging cutting-edge technologies to solve complex business problems and am currently exploring innovations in AI/ML to enhance financial services.
+            <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              Additionally, I have a deep understanding of distributed systems, microservices architecture, and event-driven design, leveraging tools like Kafka, RabbitMQ, and GraphQL. My passion lies in AI/ML innovations, integrating predictive analytics and data-driven decision-making into financial services.
             </p>
           </div>
           
@@ -54,7 +54,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
                 <h4 className="text-xl font-semibold">Education</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                Master's in Computer Science with specialization in Distributed Systems
+                Bachelor's in Information Technology
               </p>
             </div>
             
@@ -78,7 +78,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
                 <h4 className="text-xl font-semibold">Certifications</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                AWS Solutions Architect, Google Cloud Professional, Azure Developer
+                AWS Solutions Architect, Terraform Associate
               </p>
             </div>
           </div>

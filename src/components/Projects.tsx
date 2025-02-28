@@ -131,6 +131,47 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       category: "mobile",
       githubLink: "https://github.com",
       liveLink: "https://example.com"
+    },
+    {
+      id: 11,
+    title: "Cloud-Native Health Insurance Platform",
+    description: "Scalable platform connecting patients, providers, and insurers",
+    longDescription: "Designed and built a comprehensive health insurance platform that streamlines interactions between patients, healthcare providers, and insurance companies. The platform includes features for policy management, claims processing, provider network management, and member services. Implemented as a cloud-native solution using microservices architecture on AWS EKS with Node.js and TypeScript. The system processes over 10,000 claims daily with automated adjudication for 80% of submissions, reducing processing time from weeks to minutes while maintaining compliance with healthcare regulations and security standards.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    technologies: ["TypeScript", "Node.js", "AWS EKS", "MongoDB", "Redis", "React", "Express"],
+    category: "backend",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com"
+    },{
+      id: 12,
+    title: "AR-Assisted Property Inspection",
+    description: "Mobile app using augmented reality for property assessments",
+    longDescription: "Developed an innovative mobile application that uses augmented reality to assist property inspectors and appraisers. The app allows users to visualize property data in real-time, capture measurements using AR capabilities, document issues with spatial annotations, and generate comprehensive reports. Built with Swift for iOS and Kotlin for Android, using ARKit and ARCore respectively. The app integrates with existing property management systems through a custom API layer built with GraphQL. Field tests showed a 40% reduction in inspection time and significantly improved accuracy in damage assessment and measurement collection.",
+    image: "https://images.unsplash.com/photo-1633421878925-ac180dea689b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    technologies: ["Swift", "Kotlin", "ARKit", "ARCore", "GraphQL", "Firebase", "Node.js"],
+    category: "mobile",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com"
+    },{
+      id: 13,
+    title: "Accessible E-Commerce Platform",
+    description: "Fully accessible online shopping experience adhering to WCAG standards",
+    longDescription: "Architected and implemented a fully accessible e-commerce platform that provides an inclusive shopping experience for users with disabilities. The platform adheres to WCAG 2.1 AAA standards and includes features such as keyboard navigation, screen reader compatibility, high contrast modes, and simplified interfaces for cognitive accessibility. Built with Next.js for the frontend, with a headless commerce backend using Strapi and integrated with multiple payment gateways. The application uses specialized testing frameworks to continuously validate accessibility compliance. After launch, the platform increased conversion rates by 23% across all user segments and significantly improved retention metrics for users with accessibility needs.",
+    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    technologies: ["Next.js", "TypeScript", "Strapi", "Tailwind CSS", "Jest", "Cypress", "Vercel"],
+    category: "frontend",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com"
+    },{
+      id: 14,
+    title: "Real-time Collaborative Code Editor",
+    description: "Browser-based IDE with multi-user editing and execution capabilities",
+    longDescription: "Built a collaborative, browser-based code editor that allows multiple developers to write and execute code together in real-time. The editor features syntax highlighting for over 40 programming languages, intelligent code completion, real-time cursor tracking for all participants, integrated terminal for command execution, and isolated execution environments for running code securely. The frontend is built with React and Monaco Editor, while the backend uses Node.js with Socket.io for real-time communication and Docker for secure code execution. The system includes features like permissions management, version history, and integration with GitHub for seamless project import/export.",
+    image: "https://images.unsplash.com/photo-1610986603166-f78428624e76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    technologies: ["React", "TypeScript", "Monaco Editor", "Node.js", "Socket.io", "Docker", "Redis"],
+    category: "frontend",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com"
     }
   ];
 
