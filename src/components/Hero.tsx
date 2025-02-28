@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/GaneshajDivekar" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transition-colors duration-300`}
@@ -89,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
           <div className="lg:w-1/2 flex justify-center">
             <div className={`relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 ${darkMode ? 'border-blue-600 shadow-lg shadow-blue-500/20' : 'border-blue-500 shadow-lg'}`}>
               <img 
-                src="https://drive.google.com/file/d/1FyoarJGNSA9P11k2TaeUHyVFg7LQG1qh/view?usp=drive_link" 
+                src="https://imgur.com/a/G5irnxJ" 
                 alt="Ganesh Divekar" 
                 className="w-full h-full object-cover"
               />

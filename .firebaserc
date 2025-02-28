@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ganeshtechspace"
-  }
+    "default": "ganeshtechspace",
+    "staging": "ganeshtechspace"
+  },
+  "targets": {},
+  "etags": {}
 }
