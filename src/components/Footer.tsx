@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-2xl font-bold">
-              Ganesh<span className="text-blue-600">Divekar</span>
+              Ganesh<span className="text-blue-600"> Divekar</span>
             </a>
             <p className={`mt-2 max-w-md ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Platform Architecture Engineering professional specializing in scalable, robust software solutions.

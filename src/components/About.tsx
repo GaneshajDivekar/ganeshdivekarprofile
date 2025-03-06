@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Briefcase, GraduationCap, MapPin } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, MapPin, Code, Globe, Heart } from 'lucide-react';
 
 interface AboutProps {
   darkMode: boolean;
@@ -13,72 +13,102 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-6">
-              Tech-Driven Platform Architecture Engineering Professional
+              🚀 Tech-Driven <span className="text-blue-500">Platform Architecture Engineering</span> Professional
             </h3>
-            <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              I am a technology-driven engineering professional with extensive experience in platform architecture and engineering management. Currently serving as Manager of Platform Architecture Engineering at Bajaj Finserv, I lead teams in designing and implementing robust, scalable systems that power financial technology solutions.
-            </p>
-            <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              My technical expertise spans backend development with Java, Kotlin, Go, and Python; frontend development with React, Angular, and Next.js; mobile development across Android, iOS, and Flutter; and cloud infrastructure on AWS, Azure, and GCP. I specialize in DevOps automation with Kubernetes, Terraform, and CI/CD pipelines, ensuring efficient deployment and scalability of cloud-native applications.
-            </p>
-            <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              Additionally, I have a deep understanding of distributed systems, microservices architecture, and event-driven design, leveraging tools like Kafka, RabbitMQ, and GraphQL. My passion lies in AI/ML innovations, integrating predictive analytics and data-driven decision-making into financial services.
-            </p>
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
+              <p className={`text-lg mb-4 font-semibold ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                I am a <span className="text-blue-500 font-bold">technology-driven engineering leader</span> with a passion for architecting scalable, high-performance platforms that power modern financial technology solutions.
+              </p>
+              <p className={`text-lg mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                Currently serving as <span className="font-bold">Manager - Platform Architecture Engineering at Bajaj Finserv</span>, I lead teams in designing, developing, and optimizing mission-critical systems that drive digital transformation in financial services.
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'} transition-colors duration-300`}>
+            {/** Experience */}
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="flex items-center mb-4">
-                <div className="p-3 rounded-full bg-blue-600 text-white mr-4">
-                  <Briefcase size={24} />
-                </div>
+                <Briefcase size={24} className="text-blue-600 mr-4" />
                 <h4 className="text-xl font-semibold">Experience</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                10+ years of experience in software engineering and architecture
+                10+ years in <span className="font-bold">software engineering & architecture</span>
               </p>
             </div>
             
-            <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'} transition-colors duration-300`}>
+            {/** Education */}
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="flex items-center mb-4">
-                <div className="p-3 rounded-full bg-blue-600 text-white mr-4">
-                  <GraduationCap size={24} />
-                </div>
+                <GraduationCap size={24} className="text-blue-600 mr-4" />
                 <h4 className="text-xl font-semibold">Education</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                Bachelor's in Information Technology
+                Bachelor's in <span className="font-bold">Information Technology</span>
               </p>
             </div>
-            
-            <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'} transition-colors duration-300`}>
+
+            {/** Location */}
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="flex items-center mb-4">
-                <div className="p-3 rounded-full bg-blue-600 text-white mr-4">
-                  <MapPin size={24} />
-                </div>
+                <MapPin size={24} className="text-blue-600 mr-4" />
                 <h4 className="text-xl font-semibold">Location</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
                 Pune, Maharashtra, India
               </p>
             </div>
-            
-            <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'} transition-colors duration-300`}>
+
+            {/** Certifications */}
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
               <div className="flex items-center mb-4">
-                <div className="p-3 rounded-full bg-blue-600 text-white mr-4">
-                  <Award size={24} />
-                </div>
+                <Award size={24} className="text-blue-600 mr-4" />
                 <h4 className="text-xl font-semibold">Certifications</h4>
               </div>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                AWS Solutions Architect, Terraform Associate
+                <span className="font-bold">AWS Solutions Architect</span>, Terraform Associate
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/** Additional Details */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold mb-6">🌟 Vision & Passion</h3>
+          <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
+            <p className={`text-lg mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              My passion lies in <span className="font-bold">AI/ML innovations</span>, integrating predictive analytics and data-driven decision-making into fintech. I thrive on solving complex engineering challenges, mentoring teams, and fostering a culture of <span className="font-bold">technical excellence</span>.
+            </p>
+          </div>
+        </div>
+
+        {/** Hobbies & Interests */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold mb-6">🏆 Beyond Technology</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
+              <div className="flex items-center mb-4">
+                <Globe size={24} className="text-blue-600 mr-4" />
+                <h4 className="text-xl font-semibold">Travel & Adventure</h4>
+              </div>
+              <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                Exploring new places & cultures keeps me inspired! 🌍
+              </p>
+            </div>
+            <div className={`p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
+              <div className="flex items-center mb-4">
+                <Heart size={24} className="text-blue-600 mr-4" />
+                <h4 className="text-xl font-semibold">Fitness & Well-being</h4>
+              </div>
+              <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                Running, trekking & yoga keep me energized! 🏃‍♂️
               </p>
             </div>
           </div>
