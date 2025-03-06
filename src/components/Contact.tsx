@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
-import { Instagram, Twitter } from 'lucide-react';
 
 interface ContactProps {
   darkMode: boolean;
@@ -27,11 +26,13 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitSuccess(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       
+      // Reset success message after 5 seconds
       setTimeout(() => {
         setSubmitSuccess(false);
       }, 5000);
@@ -88,6 +89,18 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
               
               <div className="flex items-start">
                 <div className={`p-3 rounded-full ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} mr-4`}>
+                  <MapPin className="text-blue-600" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold mb-1">Location</h4>
+                  <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                    Pune, Maharashtra, India
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className={`p-3 rounded-full ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} mr-4`}>
                   <Linkedin className="text-blue-600" size={24} />
                 </div>
                 <div>
@@ -103,40 +116,126 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className={`p-3 rounded-full ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} mr-4`}>
-                  <Instagram className="text-blue-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-1">Instagram</h4>
-                  <a 
-                    href="https://www.instagram.com/codeguruganeshula/?hl=en" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
-                  >
-                    @codeguruganeshula
-                  </a>
-                </div>
+            </div>
+            
+            
+            <div className="mt-10">
+              <h3 className="text-2xl font-bold mb-6">Blog</h3>
+              <a 
+                href="https://ganeshajdivekar.medium.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
+              >
+                ganeshajdivekar.medium.com
+              </a>
+              <p className={`mt-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                Check out my blog for articles on software engineering, architecture, and technology trends.
+              </p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className={`block text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>
+                  Your Name
+                </label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    darkMode 
+                      ? 'bg-gray-800 border-gray-700 text-white' 
+                      : 'bg-white border-gray-300 text-gray-900'
+                  }`}
+                />
               </div>
               
-              <div className="flex items-start">
-                <div className={`p-3 rounded-full ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} mr-4`}>
-                  <Twitter className="text-blue-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-1">Twitter</h4>
-                  <a 
-                    href="https://x.com/GaneshAJD" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
-                  >
-                    @GaneshAJD
-                  </a>
-                </div>
+              <div>
+                <label htmlFor="email" className={`block text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>
+                  Your Email
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    darkMode 
+                      ? 'bg-gray-800 border-gray-700 text-white' 
+                      : 'bg-white border-gray-300 text-gray-900'
+                  }`}
+                />
               </div>
-            </div>
+              
+              <div>
+                <label htmlFor="subject" className={`block text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>
+                  Subject
+                </label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    darkMode 
+                      ? 'bg-gray-800 border-gray-700 text-white' 
+                      : 'bg-white border-gray-300 text-gray-900'
+                  }`}
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className={`block text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>
+                  Message
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows={5} 
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    darkMode 
+                      ? 'bg-gray-800 border-gray-700 text-white' 
+                      : 'bg-white border-gray-300 text-gray-900'
+                  }`}
+                ></textarea>
+              </div>
+              
+              <div>
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className={`w-full py-3 px-6 rounded-lg bg-blue-600 text-white font-medium shadow-lg hover:bg-blue-700 transition-colors duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </div>
+              
+              {submitSuccess && (
+                <div className="p-4 rounded-lg bg-green-100 text-green-800">
+                  Your message has been sent successfully. I'll get back to you soon!
+                </div>
+              )}
+              
+              {submitError && (
+                <div className="p-4 rounded-lg bg-red-100 text-red-800">
+                  {submitError}
+                </div>
+              )}
+            </form>
           </div>
         </div>
       </div>
