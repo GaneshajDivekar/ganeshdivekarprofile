@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-// import Gallery from './components/Gallery';
+ //import Gallery from './components/Gallery';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,7 +40,7 @@ function App() {
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode} />
         <Projects darkMode={darkMode} />
-        {/* <Gallery darkMode={darkMode} /> */}
+        { /*<Gallery darkMode={darkMode} />*/ }
         <Contact darkMode={darkMode} />
       </main>
       <Footer darkMode={darkMode} />
